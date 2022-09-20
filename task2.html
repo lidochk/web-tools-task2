@@ -1,0 +1,30 @@
+<html>   
+   <head>
+   	<link rel="stylesheet" href="task2.css">
+   	  <script type = "text/javascript">
+         <!--
+            var imgObj = null;
+            
+            function init() {
+               imgObj = document.getElementById('myImage');
+               imgObj.style.position= 'relative'; 
+               imgObj.style.left = '0px'; 
+            }
+            function moveRight() {
+               imgObj.style.left = parseInt(imgObj.style.left) + 10 + 'px';
+            }
+            
+            window.onload = init;
+         //-->
+      </script>
+    </head>
+  
+   <body>   
+      <form>
+         <label for="email">Email:</label><br>
+		 <input type="text" id="email" name="email"><br>
+		 <img id = "myImage" src = "arrow.jpeg" /><br>
+		 <input type="button"  value="Submit" onclick="moveRight();"">
+      </form>  
+   </body>
+</html>
